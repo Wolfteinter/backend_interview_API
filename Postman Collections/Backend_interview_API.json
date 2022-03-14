@@ -10,7 +10,7 @@
       "item": [
         {
           "name": "CREATE",
-          "_postman_id": "de8b7115-cee5-4794-9715-8d282c509288",
+          "id": "de8b7115-cee5-4794-9715-8d282c509288",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -32,7 +32,7 @@
         },
         {
           "name": "GET SEASONS",
-          "_postman_id": "44f8f3f7-aa0d-4de2-b21d-641a767d30bc",
+          "id": "44f8f3f7-aa0d-4de2-b21d-641a767d30bc",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -45,7 +45,7 @@
         },
         {
           "name": "EDIT",
-          "_postman_id": "ff209e3f-4100-49a9-98c4-0254c326b336",
+          "id": "ff209e3f-4100-49a9-98c4-0254c326b336",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -67,7 +67,7 @@
         },
         {
           "name": "DELETE",
-          "_postman_id": "34dd4ace-03a8-4cd1-98da-eb95d1214002",
+          "id": "34dd4ace-03a8-4cd1-98da-eb95d1214002",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -80,7 +80,7 @@
         },
         {
           "name": "SHOW",
-          "_postman_id": "fda72272-3d6c-409f-8580-7b4368b0b326",
+          "id": "fda72272-3d6c-409f-8580-7b4368b0b326",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -92,14 +92,14 @@
           "response": []
         }
       ],
-      "_postman_id": "3e15a2f5-8a1a-4bf2-8b20-dcb7b354882f"
+      "id": "3e15a2f5-8a1a-4bf2-8b20-dcb7b354882f"
     },
     {
       "name": "Weather",
       "item": [
         {
           "name": "CREATE",
-          "_postman_id": "be2c8ef3-fcb3-4ade-bd28-436e449ddbcd",
+          "id": "be2c8ef3-fcb3-4ade-bd28-436e449ddbcd",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -121,7 +121,7 @@
         },
         {
           "name": "DETECT CHANGE",
-          "_postman_id": "40ff155e-6f1c-47d9-8977-98e4af5d5c56",
+          "id": "40ff155e-6f1c-47d9-8977-98e4af5d5c56",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -143,7 +143,7 @@
         },
         {
           "name": "SHOW",
-          "_postman_id": "683a8195-ee33-4965-80ac-689dc1dc91b4",
+          "id": "683a8195-ee33-4965-80ac-689dc1dc91b4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -156,7 +156,7 @@
         },
         {
           "name": "EDIT",
-          "_postman_id": "57a6676c-20a0-4266-abbe-f25f20d60e72",
+          "id": "57a6676c-20a0-4266-abbe-f25f20d60e72",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -169,7 +169,7 @@
         },
         {
           "name": "DELETE",
-          "_postman_id": "a9d26071-5ecb-493d-8af9-fb91223609b7",
+          "id": "a9d26071-5ecb-493d-8af9-fb91223609b7",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -181,14 +181,14 @@
           "response": []
         }
       ],
-      "_postman_id": "a38d1894-d531-4fb2-b350-b907260c694b"
+      "id": "a38d1894-d531-4fb2-b350-b907260c694b"
     },
     {
       "name": "Customer order line",
       "item": [
         {
           "name": "Customer order status",
-          "_postman_id": "9cb361d9-075e-427c-af9d-c6cc3a1d5e3d",
+          "id": "9cb361d9-075e-427c-af9d-c6cc3a1d5e3d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -210,7 +210,7 @@
         },
         {
           "name": "CREATE",
-          "_postman_id": "643fd9fe-4b4b-406e-a9d3-f495c0767785",
+          "id": "643fd9fe-4b4b-406e-a9d3-f495c0767785",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -232,20 +232,20 @@
         },
         {
           "name": "SHOW",
-          "_postman_id": "8fa62599-6e00-43a6-a11c-6a4004eb6337",
+          "id": "8fa62599-6e00-43a6-a11c-6a4004eb6337",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "http://127.0.0.1:5000/api/customer-order-lines"
           },
           "response": []
         },
         {
           "name": "EDIT",
-          "_postman_id": "cd8f143d-3081-4006-9348-3eed1eac0b04",
+          "id": "cd8f143d-3081-4006-9348-3eed1eac0b04",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -258,7 +258,7 @@
         },
         {
           "name": "DELETE",
-          "_postman_id": "5e7f9cf5-73b0-47ba-89e7-1ae8e71d80de",
+          "id": "5e7f9cf5-73b0-47ba-89e7-1ae8e71d80de",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -270,7 +270,7 @@
           "response": []
         }
       ],
-      "_postman_id": "69e9f52d-ab02-4479-9a3d-ef67c0a151f7"
+      "id": "69e9f52d-ab02-4479-9a3d-ef67c0a151f7"
     }
   ]
 }
