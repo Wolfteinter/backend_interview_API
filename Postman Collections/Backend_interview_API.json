@@ -331,7 +331,41 @@
             "header": [],
             "url": "http://127.0.0.1:5000/api/get-customer-order-status/"
           },
-          "response": []
+          "response": [
+            {
+              "id": "9daf5731-18cb-4628-9ceb-0cfa03959c67",
+              "name": "GET CUSTOMER STATUS",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "http://127.0.0.1:5000/api/get-customer-order-status/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "147"
+                },
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/0.14.1 Python/3.8.10"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 14 Mar 2022 00:49:11 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"customer_ord_status\": {\n        \"ORD_1234\": \"SHIPPED\",\n        \"ORD_1567\": \"PENDING\",\n        \"ORD_7654\": \"CANCELLED\",\n        \"ORD_9834\": \"SHIPPED\"\n    }\n}"
+            }
+          ]
         },
         {
           "name": "CREATE",
