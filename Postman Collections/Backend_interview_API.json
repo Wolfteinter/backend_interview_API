@@ -61,7 +61,7 @@
                 }
               }
             },
-            "url": "http://127.0.0.1:5000/api/customer_order/1"
+            "url": "http://127.0.0.1:5000/api/customer-order/1"
           },
           "response": []
         },
