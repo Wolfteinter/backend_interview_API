@@ -74,6 +74,39 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"seasons\": {\n        \"112-5230502-8173028\": \"Winter\",\n        \"112-7714081-3300254\": \"Spring\",\n        \"113-8909896-6940269\": \"Fall\",\n        \"114-0291773-7262677\": \"Winter\",\n        \"114-0291773-7262697\": \"Fall\",\n        \"114-5384551-1465853\": \"Spring\",\n        \"114-7232801-4607440\": \"Fall\",\n        \"114-9900513-7761000\": \"Fall\"\n    }\n}"
+            },
+            {
+              "id": "41b5a019-d6a0-4e3d-8827-c3d9df24ae06",
+              "name": "GET SEASONS",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "http://127.0.0.1:5000/api/get-seasons/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "317"
+                },
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/0.14.1 Python/3.8.10"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 14 Mar 2022 01:01:13 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"seasons\": {\n        \"112-5230502-8173028\": \"Winter\",\n        \"112-7714081-3300254\": \"Spring\",\n        \"113-8909896-6940269\": \"Fall\",\n        \"114-0291773-7262677\": \"Winter\",\n        \"114-0291773-7262697\": \"Fall\",\n        \"114-5384551-1465853\": \"Spring\",\n        \"114-7232801-4607440\": \"Fall\",\n        \"114-9900513-7761000\": \"Fall\"\n    }\n}"
             }
           ]
         },
