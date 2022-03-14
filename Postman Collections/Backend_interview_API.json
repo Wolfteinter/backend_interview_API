@@ -250,9 +250,18 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
-            "url": ""
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"item_name\": \"LAPTOPs\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://127.0.0.1:5000/api/customer-order-line/1"
           },
           "response": []
         },
