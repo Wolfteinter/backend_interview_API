@@ -1,0 +1,276 @@
+{
+  "info": {
+    "_postman_id": "26fe7a3f-1e10-4599-8934-8f97fd333a71",
+    "name": "Backend Interview API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Customer order",
+      "item": [
+        {
+          "name": "CREATE",
+          "_postman_id": "de8b7115-cee5-4794-9715-8d282c509288",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"ord_id\": \"113-8909896-6940269\",\n    \"ord_dt\": \"10/23/19\",\n    \"qt_ordd\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://127.0.0.1:5000/api/customer_orders"
+          },
+          "response": []
+        },
+        {
+          "name": "GET SEASONS",
+          "_postman_id": "44f8f3f7-aa0d-4de2-b21d-641a767d30bc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://127.0.0.1:5000/api/get-seasons/"
+          },
+          "response": []
+        },
+        {
+          "name": "EDIT",
+          "_postman_id": "ff209e3f-4100-49a9-98c4-0254c326b336",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"ord_dt\": \"11/23/19\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://127.0.0.1:5000/api/customer_order/1"
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE",
+          "_postman_id": "34dd4ace-03a8-4cd1-98da-eb95d1214002",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://127.0.0.1:5000/api/customer_order/1"
+          },
+          "response": []
+        },
+        {
+          "name": "SHOW",
+          "_postman_id": "fda72272-3d6c-409f-8580-7b4368b0b326",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://127.0.0.1:5000/api/customer_orders"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "3e15a2f5-8a1a-4bf2-8b20-dcb7b354882f"
+    },
+    {
+      "name": "Weather",
+      "item": [
+        {
+          "name": "CREATE",
+          "_postman_id": "be2c8ef3-fcb3-4ade-bd28-436e449ddbcd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"date\": \"1/1/20\",\n    \"was_rainy\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://127.0.0.1:5000/api/weather"
+          },
+          "response": []
+        },
+        {
+          "name": "DETECT CHANGE",
+          "_postman_id": "40ff155e-6f1c-47d9-8977-98e4af5d5c56",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n   \"weather\" : [\n        {\n           \"date\": \"1/1/20\",\n           \"was_rainy\": false\n        },\n        {\n           \"date\": \"1/2/20\",\n           \"was_rainy\": true\n        },\n        {\n           \"date\": \"1/3/20\",\n           \"was_rainy\": true\n        },\n        {\n           \"date\": \"1/4/20\",\n           \"was_rainy\": true\n        },\n        {\n           \"date\": \"1/5/20\",\n           \"was_rainy\": false\n        },\n        {\n           \"date\": \"1/6/20\",\n           \"was_rainy\": true\n        },\n        {\n           \"date\": \"1/7/20\",\n           \"was_rainy\": false\n        },\n        {\n           \"date\": \"1/8/20\",\n           \"was_rainy\": true\n        },\n        {\n           \"date\": \"1/9/20\",\n           \"was_rainy\": true\n        },\n        {\n           \"date\": \"1/10/20\",\n           \"was_rainy\": true\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://127.0.0.1:5000/api/detect-change/"
+          },
+          "response": []
+        },
+        {
+          "name": "SHOW",
+          "_postman_id": "683a8195-ee33-4965-80ac-689dc1dc91b4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        },
+        {
+          "name": "EDIT",
+          "_postman_id": "57a6676c-20a0-4266-abbe-f25f20d60e72",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "http://127.0.0.1:5000/api/weather/1"
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE",
+          "_postman_id": "a9d26071-5ecb-493d-8af9-fb91223609b7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://127.0.0.1:5000/api/weather/1"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "a38d1894-d531-4fb2-b350-b907260c694b"
+    },
+    {
+      "name": "Customer order line",
+      "item": [
+        {
+          "name": "Customer order status",
+          "_postman_id": "9cb361d9-075e-427c-af9d-c6cc3a1d5e3d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n   \"customer_ord_lines\" : [\n        {\n           \"order_number\": \"ORD_1567\",\n           \"item_name\": \"LAPTOP\",\n           \"status\": \"SHIPPED\"\n        },\n        {\n           \"order_number\": \"ORD_1567\",\n           \"item_name\": \"MOUSE\",\n           \"status\": \"SHIPPED\"\n        },\n        {\n           \"order_number\": \"ORD_1567\",\n           \"item_name\": \"KEYBOARD\",\n           \"status\": \"PENDING\"\n        },\n        {\n           \"order_number\": \"ORD_1234\",\n           \"item_name\": \"GAME\",\n           \"status\": \"SHIPPED\"\n        },\n        {\n           \"order_number\": \"ORD_1234\",\n           \"item_name\": \"BOOK\",\n           \"status\": \"CANCELLED\"\n        },\n        {\n           \"order_number\": \"ORD_1234\",\n           \"item_name\": \"BOOK\",\n           \"status\": \"CANCELLED\"\n        },\n        {\n           \"order_number\": \"ORD_9838\",\n           \"item_name\": \"BOOK\",\n           \"status\": \"CANCELLED\"\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://127.0.0.1:5000/api/get-customer-order-status/"
+          },
+          "response": []
+        },
+        {
+          "name": "CREATE",
+          "_postman_id": "643fd9fe-4b4b-406e-a9d3-f495c0767785",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"order_number\": \"ORD_1567\",\n    \"item_name\": \"LAPTOP\",\n    \"status\": \"SHIPPED\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://127.0.0.1:5000/api/customer_order_lines"
+          },
+          "response": []
+        },
+        {
+          "name": "SHOW",
+          "_postman_id": "8fa62599-6e00-43a6-a11c-6a4004eb6337",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        },
+        {
+          "name": "EDIT",
+          "_postman_id": "cd8f143d-3081-4006-9348-3eed1eac0b04",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE",
+          "_postman_id": "5e7f9cf5-73b0-47ba-89e7-1ae8e71d80de",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "69e9f52d-ab02-4479-9a3d-ef67c0a151f7"
+    }
+  ]
+}
