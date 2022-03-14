@@ -10,7 +10,7 @@ from itertools import groupby
 from datetime import datetime
 
 """
-Creating the flask application
+Creating flask application
 """
 app = Flask(__name__)
 

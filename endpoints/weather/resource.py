@@ -2,12 +2,14 @@ from flask_restful import Resource, reqparse, request
 from flask_restful import fields, marshal_with, marshal
 from .model import Weather
 from app import db
-
+"""
+Define serializers
+"""
 weather_fields = {
     'id': fields.Integer,
     'date': fields.String,
     'was_rainy': fields.Boolean
-    
+
 }
 
 weather_list_fields = {
@@ -15,12 +17,25 @@ weather_list_fields = {
     'weathers': fields.List(fields.Nested(weather_fields)),
 }
 
+"""
+Define the request parser for the post method.
+"""
 weather_post_parser = reqparse.RequestParser()
-weather_post_parser.add_argument('date', type=str, required=True, location=['json'],help='name parameter is required')
-weather_post_parser.add_argument('was_rainy', type=bool, required=True, location=['json'],help='name parameter is required')
+weather_post_parser.add_argument('date', type=str, required=True, location=[
+                                 'json'], help='date parameter is required')
+weather_post_parser.add_argument('was_rainy', type=bool, required=True, location=[
+                                 'json'], help='was_rainy parameter is required')
+
+"""
+Define the resource and the methods that will be available
+"""
 
 
 class WeatherResource(Resource):
+    """
+    Define the GET method
+    """
+
     def get(self, weather_id=None):
         if weather_id:
             weather = Weather.query.filter_by(id=weather_id).first()
@@ -47,7 +62,9 @@ class WeatherResource(Resource):
                 'count': len(weather),
                 'weathers': [marshal(u, weather_fields) for u in weather]
             }, weather_list_fields)
-
+    """
+    Define the POST method
+    """
     @marshal_with(weather_fields)
     def post(self):
         args = weather_post_parser.parse_args()
@@ -57,7 +74,9 @@ class WeatherResource(Resource):
         db.session.commit()
 
         return weather
-
+    """
+    Define the PUT method
+    """
     @marshal_with(weather_fields)
     def put(self, weather_id=None):
         weather = Weather.query.get(weather_id)
@@ -70,7 +89,9 @@ class WeatherResource(Resource):
 
         db.session.commit()
         return weather
-
+    """
+    Define the DELETE method
+    """
     @marshal_with(weather_fields)
     def delete(self, weather_id=None):
         weather = Weather.query.get(weather_id)
