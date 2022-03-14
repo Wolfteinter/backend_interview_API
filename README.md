@@ -1,11 +1,13 @@
 # Backend interview API
 ## Run project
 1) Clone repository
-2) `pip install -r requirements.txt`
-3) `python manage.py db init`
-4) `python manage.py db migrate`
-5) `python manage.py db upgrade`
-6) Start server with `manage.py runserver`
+2) `python3 -m venv venv`
+3) `. venv/bin/activate`
+4) `pip install -r requirements.txt`
+5) `python manage.py db init`
+6) `python manage.py db migrate`
+7) `python manage.py db upgrade`
+8) Start server with `manage.py runserver`
 ## Endpoints
 ### 
 
