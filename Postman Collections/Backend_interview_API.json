@@ -253,15 +253,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n   \"customer_ord_lines\" : [\n        {\n           \"order_number\": \"ORD_1567\",\n           \"item_name\": \"LAPTOP\",\n           \"status\": \"SHIPPED\"\n        },\n        {\n           \"order_number\": \"ORD_1567\",\n           \"item_name\": \"MOUSE\",\n           \"status\": \"SHIPPED\"\n        },\n        {\n           \"order_number\": \"ORD_1567\",\n           \"item_name\": \"KEYBOARD\",\n           \"status\": \"PENDING\"\n        },\n        {\n           \"order_number\": \"ORD_1234\",\n           \"item_name\": \"GAME\",\n           \"status\": \"SHIPPED\"\n        },\n        {\n           \"order_number\": \"ORD_1234\",\n           \"item_name\": \"BOOK\",\n           \"status\": \"CANCELLED\"\n        },\n        {\n           \"order_number\": \"ORD_1234\",\n           \"item_name\": \"BOOK\",\n           \"status\": \"CANCELLED\"\n        },\n        {\n           \"order_number\": \"ORD_9838\",\n           \"item_name\": \"BOOK\",\n           \"status\": \"CANCELLED\"\n        }\n    ]\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": "http://127.0.0.1:5000/api/get-customer-order-status/"
           },
           "response": []
