@@ -197,7 +197,41 @@
             "header": [],
             "url": "http://127.0.0.1:5000/api/detect-change/"
           },
-          "response": []
+          "response": [
+            {
+              "id": "74aab522-8832-4fcc-94b9-e9d0bee27c18",
+              "name": "DETECT CHANGE",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "http://127.0.0.1:5000/api/detect-change/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "258"
+                },
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/0.14.1 Python/3.8.10"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 14 Mar 2022 01:03:25 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"seasons\": [\n        {\n            \"date\": \"1/2/20\",\n            \"id\": 2,\n            \"was_rainy\": true\n        },\n        {\n            \"date\": \"1/6/20\",\n            \"id\": 6,\n            \"was_rainy\": true\n        },\n        {\n            \"date\": \"1/8/20\",\n            \"id\": 8,\n            \"was_rainy\": true\n        }\n    ]\n}"
+            }
+          ]
         },
         {
           "name": "SHOW",
